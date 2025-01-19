@@ -22,4 +22,4 @@ Today marks the completion of my first full week back at the gym! With a New Yea
 
 Zimmer’s iconic soundtrack elevates the film, making it an unforgettable cinematic experience. Here's a masterful piano cover by the talented [Patrik Pietschmann](https://www.youtube.com/channel/UCs7O9sOUQiBGBxaaAguIwig):  
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4y33h81phKU?si=GIXG9tzC3p9-XTCH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4y33h81phKU?si=GIXG9tzC3p9-XTCH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="aspect-ratio: 16/9; height: 100%; width: 100%"></iframe>
