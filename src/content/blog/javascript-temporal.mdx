@@ -1,0 +1,98 @@
+---
+title: "JavaScript Temporal: The future of date and time handling"
+description: "Exploring the much awaited arrival of JavaScript Temporal."
+date: "Feb 7 2025"
+---
+
+import { YouTube } from "@astro-community/astro-embed-youtube";
+
+#### What is Temporal?
+
+Temporal is a modern JavaScript API built to replace the outdated `Date` object, offering more precise, consistent, and flexible ways to handle dates, times, and time zones. In 2025, the latest implementation of Temporal started shipping in experimental browsers, marking a major step forward for web developers. This is big news, as working with dates and times in JavaScript will finally be simplified and modernized.
+
+#### Why use Temporal instead of Date?
+
+JavaScript's `Date` object has been around since 1995, and it hasn't aged well. It was based on an early Java API that even Java abandoned back in 1997. Meanwhile, JavaScript developers have been stuck with it for almost 30 years—along with all its quirks and limitations.
+
+Some of the biggest issues with `Date` include:
+
+- **Mutation issues**: `Date` is mutable, which can introduce hard-to-debug errors.
+- **Daylight Saving Time (DST) problems**: Calculating across DST changes is a headache, often requiring external libraries.
+- **Limited time zone support**: It only works with UTC and the user's local time, making time zone conversions difficult.
+- **Unreliable parsing**: `Date` behaves inconsistently when parsing strings, often leading to unexpected results.
+
+
+Due to these issues, many developers rely on libraries like [Moment.js](https://momentjs.com/) or [date-fns](https://date-fns.org/) for better handling of dates and times.
+
+Temporal solves these problems by introducing:
+- Time zone support built into the API
+- Immutable objects, reducing mutation-related bugs
+- Consistent parsing behavior, eliminating unpredictable results
+- Built-in arithmetic operations for adding and subtracting time
+
+
+#### How to use Temporal?
+
+The **Temporal API** is only available on experimental browser releases at the moment but we can try it out on the [TC39 docs page](https://tc39.es/proposal-temporal/docs/) which has `@js-temporal/polyfill`, this lets us test Temporal on the console without needing to change any browser flags or settings!
+
+Let's take a look at some of the key features of Temporal:
+
+1. Getting the current date and time:
+    ```js
+    const dateTime = Temporal.Now.plainDateTimeISO();
+    console.log(dateTime); // 2025-02-07T10:48:30.546
+    ```
+    
+2. Working with different time zones:
+
+    Handling different time zones can be a pain with `Date`, but it's quite simple in `Temporal`:
+
+    ```js
+    const dateTimeInTokyo = Temporal.Now.plainDateTimeISO("Asia/Tokyo");
+    console.log(dateTimeInTokyo); // 2025-02-08T03:58:04.871
+    ```
+
+3. Adding or subtracting time:
+
+    ```js
+    const today = Temporal.Now.plainDateISO();
+    const twoWeeksLater = today.add({ days: 14 });
+    console.log(today); // 2025-02-07
+    console.log(twoWeeksLater); // 2025-02-21
+    ```
+
+4. Formatting dates:
+
+    Previously, formatting dates required using a library like [Moment.js](https://momentjs.com/) but now `Temporal` adds many built-in methods for formatting, conversions, comparisons, and more. The full list of available methods can be found [here](https://tc39.es/proposal-temporal/docs/zoneddatetime.html#methods).
+
+    ```js
+    const date = Temporal.PlainDate.from("2025-02-07");
+    console.log(date.toString()); // 2025-02-07
+    ```
+
+
+#### Conclusion
+
+**Temporal** is a game-changer for working with dates and times in JavaScript. It fixes the long-standing issues of the `Date` object, making time management more precise, consistent, and developer-friendly.
+
+Some key takeaways I've noticed on my brief dive into Temporal:
+- Temporal objects are immutable
+- Built-in support for time zones
+- Accurate date handling
+- Over 200 utility methods for conversions, comparisons, formatting, etc
+
+For now, Temporal is being rolled out in experimental browser releases, but it's exciting to see the future of JavaScript date and time handling take shape.
+
+#### References
+
+- [JavaScript Temporal is Coming](https://developer.mozilla.org/en-US/blog/javascript-temporal-is-coming) - MDN Blog
+- [Fixing JavaScript Date](https://maggiepint.com/2017/04/09/fixing-javascript-date-getting-started/) - Maggie Pint
+- [Temporal Proposal Docs](https://tc39.es/proposal-temporal/docs)
+
+#### Song of the Day
+
+It's finally raining in Los Angeles, and this track feels like the perfect soundtrack. "Snowfall" by øneheart & reidenshi is one of those songs that somehow feels sad, nostalgic, and comforting all at once. The airy melodies and distant, drifting beats create an atmosphere that's both melancholic and peaceful—like watching the city lights blur through rain covered windows.
+
+If you haven't heard it before, give it a listen:
+
+<YouTube id="LlN8MPS7KQs" posterQuality="max" title="øneheart x reidenshi - snowfall"/>
