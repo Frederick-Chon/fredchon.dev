@@ -5,6 +5,8 @@ dateStart: "03/01/2022"
 dateEnd: "09/04/2024"
 ---
 
-* Led development of a custom WordPress template (HTML, CSS/SASS, JavaScript, jQuery, PHP) to transition from manual page-building to 100% self-service content creation, significantly reducing development overhead.
-* Built reusable React components (TypeScript, styled-components) with Cypress test coverage including the “GP’s Pick” badge by integrating WordPress backend data into a dynamic frontend.
-* Created and expanded a library of reusable WordPress components, streamlining new feature creation and enabling rapid iteration on content layouts.
+* Enabled 100% self-service publishing for editors by architecting a custom WordPress component system (HTML, SASS, JavaScript, PHP), eliminating reliance on engineers and significantly reducing content delivery time.
+* Improved UI scalability and test reliability by developing reusable React components (TypeScript, styled-components) and integrating Cypress test coverage, resulting in faster development cycles and fewer regressions.
+* Accelerated landing page deployment by expanding a modular WordPress component library, allowing for rapid content iteration and brand experimentation.
+* Mentored a junior developer via pair programming and knowledge-sharing sessions, improving coding proficiency and accelerating project delivery timelines by 30%.
+* Maintained uninterrupted marketing automation by leading the migration from Emarsys to Iterable, designing modular HTML email templates that preserved brand consistency and campaign cadence.

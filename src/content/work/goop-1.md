@@ -5,6 +5,7 @@ dateStart: "03/01/2021"
 dateEnd: "03/01/2022"
 ---
 
-* Improved development efficiency by creating a SASS-based starter template, eliminating repetitive HTML/CSS/JavaScript coding and ensuring consistent, Figma-aligned layouts for new web pages.
-* Streamlined developer workflow by building a Bash script integrating TinyPNG’s API to automate image compression, bypass the 20-image limit, and deliver high-quality assets.
-* Built and maintained responsive WordPress pages from Figma designs using HTML, CSS, and JavaScript, elevating user experience through pixel-perfect layouts, brand-aligned styling, and improved accessibility.
+* Cut new page build time by 50\% by developing a reusable SASS starter template aligned with Figma specs, ensuring consistent design implementation across pages.
+* Optimized image workflows by scripting a Bash utility with TinyPNG’s API, bypassing the 20-image upload limit and improving site performance with smaller asset sizes.
+* Delivered pixel-perfect, responsive WordPress pages from Figma designs using HTML, CSS, and JavaScript, enhancing UX and accessibility across mobile and desktop.
+* Collaborated with design and QA to ensure accessible, brand-consistent UI components across pages, contributing to a smoother handoff process and better cross-team alignment.
